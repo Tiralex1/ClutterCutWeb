@@ -2,7 +2,9 @@
 
 **ClutterCutWeb** est une extension de navigateur qui vous redonne le contrôle sur votre expérience de navigation. Supprimez les publicités, masquez les éléments distrayants, redimensionnez les blocs de texte trop petits, et sauvegardez vos préférences pour chaque site.
 
-> *Projet réalisé dans le cadre de Platon Formation - Le numérique adapté à l'humain.*
+> *Projet réalisé dans le cadre du défi de la nuit de l'info Platon Formation - Nettoyez le web comme VOUS l’entendez !*
+
+> *RATP-C (Groupe du projet) - Launay Alexis, Zhu Ruben, Jansen Paul, Colombu Tom*
 
 ## ✨ Fonctionnalités
 
