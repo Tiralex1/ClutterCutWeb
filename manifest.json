@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ClutterCutWeb",
+  "version": "1.0",
+  "description": "Coupez le désordre du web : masquez pubs et éléments indésirables.",
+  
+  "icons": {
+    "16": "icons/icon.webp",
+    "48": "icons/icon.webp",
+    "128": "icons/icon.webp"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.webp",
+      "48": "icons/icon.webp",
+      "128": "icons/icon.webp"
+    }
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

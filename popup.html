@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  
+  <div id="view-home">
+    <div class="header">
+      <h2>✂️ ClutterCutWeb</h2>
+      </div>
+
+    <div class="master-switch-container" id="masterContainer">
+      <span class="master-label" id="masterLabel">Activé sur ce site</span>
+      <label class="switch">
+        <input type="checkbox" id="masterToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button id="btn-cleaner" class="action-btn">
+      <span>🗑</span> Mode Masquer
+    </button>
+    
+    <button id="btn-resizer" class="action-btn">
+      <span>🔍</span> Mode Taille
+    </button>
+    
+    <button id="btn-manage" class="secondary-btn">
+      ⚙️ Gérer les sites & Reset
+    </button>
+    
+    <div class="sub-switch-container">
+      <span class="sub-label">Voir les éléments masqués</span>
+      <label class="switch-small">
+        <input type="checkbox" id="toggleVisibility">
+        <span class="slider-small"></span>
+      </label>
+    </div>
+  </div>
+
+  <div id="view-settings" style="display: none;">
+    <div class="header">
+      <button id="btn-back-home" class="icon-btn">⬅️ Retour</button>
+      <h2>Sites gérés</h2>
+    </div>
+
+    <div class="list-container">
+      <ul id="sitesList">
+        </ul>
+    </div>
+
+    <div class="reset-section">
+      <button id="initResetBtn">Tout réinitialiser (Global)</button>
+
+      <div id="confirmResetBlock" class="confirmation-box" style="display: none;">
+        <p class="confirm-text">Voulez-vous tout effacer ?</p>
+        <div class="confirm-buttons">
+          <button id="cancelReset" class="btn-cancel">Non</button>
+          <button id="confirmReset" class="btn-confirm">OUI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
